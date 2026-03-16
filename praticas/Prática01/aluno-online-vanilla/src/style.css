@@ -1,0 +1,125 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    --cor-secundaria: #556889; 
+    --cor-bg-sidebar: #ebebeb; 
+    --cor-header-card: #e6e6e6; 
+}
+
+
+.app-wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+.sidebar {
+    width: 280px;
+    background-color: var(--cor-bg-sidebar);
+    padding: 40px 30px;
+    border-right: 1px solid #ddd;
+}
+
+.brand {
+    margin-bottom: 50px;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    padding: 12px 0;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+
+.sidebar li::before {
+    content: "•";
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+
+.dashboard-main {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 40px 60px;
+}
+
+.topbar h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    text-align: left; 
+}
+
+.welcome-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.welcome-row h2 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+
+.avatar-mini {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    height: fit-content;
+}
+
+.card-title {
+    background-color: var(--cor-header-card);
+    padding: 12px 20px;
+    font-weight: bold;
+    font-size: 18px;
+    border-bottom: 1px solid #ccc;
+}
+
+.card-content {
+    padding: 20px;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+
+@media (max-width: 768px) {
+    .app-wrapper { flex-direction: column; }
+    .sidebar { width: 100%; height: auto; border-bottom: 1px solid #ddd; }
+    .dashboard-grid { grid-template-columns: 1fr; }
+    .topbar h1 { font-size: 32px; }
+    .dashboard-main { padding: 20px; }
+}
