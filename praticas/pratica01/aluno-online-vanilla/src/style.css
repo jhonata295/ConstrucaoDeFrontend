@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body {
+    font-family: Arial, sans-serif;
+    background: #dfe3e8;
+    }
+    
+    /* SIDEBAR */
+    .sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 240px;
+    height: 100vh;
+    background: #e0e0e0;
+    padding: 30px 20px;
+    }
+    
+    .sidebar ul {
+    padding-left: 20px;
+    }
+    
+    .sidebar li {
+    margin-bottom: 15px;
+    }
+    
+    /* CONTEÚDO */
+    .container {
+    margin-left: 260px;
+    padding: 40px;
+    max-width: 800px;
+    }
+    
+    /* TOPO */
+    .topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    }
+    
+    .topbar h1 {
+    font-size: 34px;
+    }
+    
+    .topbar p {
+    color: #555;
+    }
+    
+    /* AVATAR */
+    .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    }
+    
+    /* CARDS */
+    .card {
+    background: #eeeeee;
+    border-radius: 8px;
+    border: 1px solid #d0d0d0;
+    margin-bottom: 20px;
+    }
+    
+    .card h2 {
+    background: #d0d0d0;
+    padding: 10px;
+    font-size: 16px;
+    }
+    
+    .card ul {
+    padding: 15px;
+    list-style: none;
+    }
+    
+    /* MOBILE */
+    @media (max-width: 768px) {
+    .sidebar {
+    display: none;
+    }
+    
+    .container {
+    margin-left: 0;
+    padding: 20px;
+    }
+    }
