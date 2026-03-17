@@ -9,7 +9,7 @@
     background: #dfe3e8;
     }
     
-    /* SIDEBAR */
+   
     .sidebar {
     position: fixed;
     left: 0;
@@ -28,14 +28,14 @@
     margin-bottom: 15px;
     }
     
-    /* CONTEÚDO */
+   
     .container {
     margin-left: 260px;
     padding: 40px;
     max-width: 800px;
     }
     
-    /* TOPO */
+  
     .topbar {
     display: flex;
     justify-content: space-between;
@@ -51,14 +51,14 @@
     color: #555;
     }
     
-    /* AVATAR */
+  
     .avatar {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     }
     
-    /* CARDS */
+   
     .card {
     background: #eeeeee;
     border-radius: 8px;
@@ -77,7 +77,7 @@
     list-style: none;
     }
     
-    /* MOBILE */
+   
     @media (max-width: 768px) {
     .sidebar {
     display: none;
