@@ -1,0 +1,13 @@
+.container-page {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  h2 {
+    color: #16a34a;
+  }
+  
+  p {
+    color: #374151;
+  }
