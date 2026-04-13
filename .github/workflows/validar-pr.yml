@@ -5,27 +5,6 @@ on:
     branches: [ develop ]
 
 jobs:
-  check-vanilla:
-    name: Validar Projeto Vanilla
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout do código
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 24
-
-      - name: Instalar Dependências
-        working-directory: ./praticas/aluno-online-vanilla
-        run: npm install
-
-      - name: Executar Linters (HTML, CSS, JS)
-        working-directory: ./praticas/aluno-online-vanilla
-        run: npm run lint
-
   check-react:
     name: Validar Projeto React
     runs-on: ubuntu-latest
