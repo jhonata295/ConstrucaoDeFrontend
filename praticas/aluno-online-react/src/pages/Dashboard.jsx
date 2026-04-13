@@ -1,27 +1,19 @@
+import Topbar from "../components/Topbar";
+import Aside from "../components/Aside";
 import Card from "../components/Card";
 
 function Dashboard() {
   return (
-    <div>
-      <h1>Dashboard</h1>
+    <div style={{ display: "flex" }}>
+      <Aside itens={["Dashboard", "Notas", "Faltas", "Boletos"]} />
 
-      <Card 
-        titulo="Notas"
-        descricao="Veja suas notas"
-        cor="blue"
-      />
+      <div style={{ flex: 1 }}>
+        <Topbar titulo="Dashboard" usuario="Jhonata" />
 
-      <Card 
-        titulo="Faltas"
-        descricao="Controle de presença"
-        cor="orange"
-      />
-
-      <Card 
-        titulo="Boletos"
-        descricao="Pagamentos pendentes"
-        cor="green"
-      />
+        <Card titulo="Notas" descricao="Ver notas" cor="blue" />
+        <Card titulo="Faltas" descricao="Ver faltas" cor="orange" />
+        <Card titulo="Boletos" descricao="Ver pagamentos" cor="green" />
+      </div>
     </div>
   );
 }

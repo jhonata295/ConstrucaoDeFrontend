@@ -1,21 +1,18 @@
+import Topbar from "../components/Topbar";
+import Aside from "../components/Aside";
 import Card from "../components/Card";
 
 function Requerimentos() {
   return (
-    <div>
-      <h1>Requerimentos</h1>
+    <div style={{ display: "flex" }}>
+      <Aside itens={["Dashboard", "Requerimentos"]} />
 
-      <Card 
-        titulo="Declaração de Matrícula"
-        status="Aprovado"
-        cor="purple"
-      />
+      <div style={{ flex: 1 }}>
+        <Topbar titulo="Requerimentos" usuario="Jhonata" />
 
-      <Card 
-        titulo="2ª via de boleto"
-        status="Em análise"
-        cor="purple"
-      />
+        <Card titulo="Declaração" status="Aprovado" cor="purple" />
+        <Card titulo="2ª via boleto" status="Em análise" cor="purple" />
+      </div>
     </div>
   );
 }

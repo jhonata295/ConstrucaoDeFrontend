@@ -1,23 +1,23 @@
-import Card from "../components/Card";
+import Topbar from "../components/Topbar";
+import Aside from "../components/Aside";
+import Tabela from "../components/Tabela";
 
 function Notas() {
   return (
-    <div>
-      <h1>Notas</h1>
+    <div style={{ display: "flex" }}>
+      <Aside itens={["Dashboard", "Notas", "Faltas"]} />
 
-      <Card 
-        titulo="Matemática"
-        valor="8.5"
-        status="Aprovado"
-        cor="blue"
-      />
+      <div style={{ flex: 1 }}>
+        <Topbar titulo="Notas" usuario="Jhonata" />
 
-      <Card 
-        titulo="Português"
-        valor="6.0"
-        status="Recuperação"
-        cor="blue"
-      />
+        <Tabela
+          colunas={["Disciplina", "Nota", "Status"]}
+          dados={[
+            ["Matemática", "8.5", "Aprovado"],
+            ["Português", "6.0", "Recuperação"]
+          ]}
+        />
+      </div>
     </div>
   );
 }

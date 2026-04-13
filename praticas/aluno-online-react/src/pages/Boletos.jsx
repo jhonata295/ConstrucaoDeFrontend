@@ -1,23 +1,18 @@
+import Topbar from "../components/Topbar";
+import Aside from "../components/Aside";
 import Card from "../components/Card";
 
 function Boletos() {
   return (
-    <div>
-      <h1>Boletos</h1>
+    <div style={{ display: "flex" }}>
+      <Aside itens={["Dashboard", "Boletos"]} />
 
-      <Card 
-        titulo="Mensalidade Janeiro"
-        valor="R$ 500"
-        status="Pago"
-        cor="green"
-      />
+      <div style={{ flex: 1 }}>
+        <Topbar titulo="Boletos" usuario="Jhonata" />
 
-      <Card 
-        titulo="Mensalidade Fevereiro"
-        valor="R$ 500"
-        status="Pendente"
-        cor="green"
-      />
+        <Card titulo="Janeiro" valor="R$500" status="Pago" cor="green" />
+        <Card titulo="Fevereiro" valor="R$500" status="Pendente" cor="green" />
+      </div>
     </div>
   );
 }

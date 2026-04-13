@@ -1,23 +1,23 @@
-import Card from "../components/Card";
+import Topbar from "../components/Topbar";
+import Aside from "../components/Aside";
+import Tabela from "../components/Tabela";
 
 function Faltas() {
   return (
-    <div>
-      <h1>Faltas</h1>
+    <div style={{ display: "flex" }}>
+      <Aside itens={["Dashboard", "Notas", "Faltas"]} />
 
-      <Card 
-        titulo="Matemática"
-        valor="3 faltas"
-        status="OK"
-        cor="orange"
-      />
+      <div style={{ flex: 1 }}>
+        <Topbar titulo="Faltas" usuario="Jhonata" />
 
-      <Card 
-        titulo="História"
-        valor="10 faltas"
-        status="Atenção"
-        cor="orange"
-      />
+        <Tabela
+          colunas={["Disciplina", "Faltas", "Status"]}
+          dados={[
+            ["Matemática", "3", "OK"],
+            ["História", "10", "Atenção"]
+          ]}
+        />
+      </div>
     </div>
   );
 }
