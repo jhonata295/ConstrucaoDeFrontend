@@ -1,23 +1,30 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate } from "react-router-dom";
 
-import Layout from './layouts/Layout'
+import Login from "./pages/Login";
+import Dashboard from "./pages/Dashboard";
+import Faltas from "./pages/Faltas";
 
-import Dashboard from './pages/Dashboard'
-import Faltas from './pages/Faltas'
-import Notas from './pages/Notas'
-import Boletos from './pages/Boletos'
+import { useAuth } from "./contexts/AuthContext";
 
 function App() {
+  const { autenticado } = useAuth();
+
+  if (!autenticado) {
+    return (
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="*" element={<Navigate to="/login" />} />
+      </Routes>
+    );
+  }
+
   return (
     <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<Dashboard />} />
-        <Route path="faltas" element={<Faltas />} />
-        <Route path="notas" element={<Notas />} />
-        <Route path="boletos" element={<Boletos />} />
-      </Route>
+      <Route path="/" element={<Dashboard />} />
+      <Route path="/faltas" element={<Faltas />} />
+      <Route path="*" element={<Navigate to="/" />} />
     </Routes>
-  )
+  );
 }
 
-export default App
+export default App;

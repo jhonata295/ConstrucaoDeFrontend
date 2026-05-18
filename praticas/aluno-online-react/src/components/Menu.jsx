@@ -1,49 +1,35 @@
-import { NavLink } from 'react-router-dom'
+import { Link, useNavigate } from "react-router-dom";
+
+import { useAuth } from "../contexts/AuthContext";
 
 function Menu() {
+  const { logout } = useAuth();
+  const navigate = useNavigate();
+
+  function handleLogout() {
+    logout();
+    navigate("/login");
+  }
+
   return (
-    <aside className="menu">
-      <h2>Aluno Online</h2>
+    <div>
+      <ul>
+        <li>
+          <Link to="/">Dashboard</Link>
+        </li>
 
-      <nav>
-        <NavLink
-          to="/"
-          className={({ isActive }) =>
-            isActive ? 'link active' : 'link'
-          }
-        >
-          Dashboard
-        </NavLink>
+        <li>
+          <Link to="/faltas">Faltas</Link>
+        </li>
 
-        <NavLink
-          to="/faltas"
-          className={({ isActive }) =>
-            isActive ? 'link active' : 'link'
-          }
-        >
-          Faltas
-        </NavLink>
-
-        <NavLink
-          to="/notas"
-          className={({ isActive }) =>
-            isActive ? 'link active' : 'link'
-          }
-        >
-          Notas
-        </NavLink>
-
-        <NavLink
-          to="/boletos"
-          className={({ isActive }) =>
-            isActive ? 'link active' : 'link'
-          }
-        >
-          Boletos
-        </NavLink>
-      </nav>
-    </aside>
-  )
+        <li>
+          <button onClick={handleLogout}>
+            Sair
+          </button>
+        </li>
+      </ul>
+    </div>
+  );
 }
 
-export default Menu
+export default Menu;
