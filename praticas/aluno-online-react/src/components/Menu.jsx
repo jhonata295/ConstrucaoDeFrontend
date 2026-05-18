@@ -1,5 +1,8 @@
 import { NavLink } from 'react-router-dom'
+<<<<<<< HEAD
 import './Menu.css'
+=======
+>>>>>>> develop
 
 function Menu() {
   return (
@@ -9,9 +12,14 @@ function Menu() {
       <nav>
         <NavLink
           to="/"
+<<<<<<< HEAD
           end
           className={({ isActive }) =>
             isActive ? 'menu-link active' : 'menu-link'
+=======
+          className={({ isActive }) =>
+            isActive ? 'link active' : 'link'
+>>>>>>> develop
           }
         >
           Dashboard
@@ -20,7 +28,11 @@ function Menu() {
         <NavLink
           to="/faltas"
           className={({ isActive }) =>
+<<<<<<< HEAD
             isActive ? 'menu-link active' : 'menu-link'
+=======
+            isActive ? 'link active' : 'link'
+>>>>>>> develop
           }
         >
           Faltas
@@ -29,7 +41,11 @@ function Menu() {
         <NavLink
           to="/notas"
           className={({ isActive }) =>
+<<<<<<< HEAD
             isActive ? 'menu-link active' : 'menu-link'
+=======
+            isActive ? 'link active' : 'link'
+>>>>>>> develop
           }
         >
           Notas
@@ -38,7 +54,11 @@ function Menu() {
         <NavLink
           to="/boletos"
           className={({ isActive }) =>
+<<<<<<< HEAD
             isActive ? 'menu-link active' : 'menu-link'
+=======
+            isActive ? 'link active' : 'link'
+>>>>>>> develop
           }
         >
           Boletos
