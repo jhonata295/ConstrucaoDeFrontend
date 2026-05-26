@@ -1,23 +1,23 @@
-import { Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Layout from './layouts/Layout'
-
-import Dashboard from './pages/Dashboard'
-import Faltas from './pages/Faltas'
-import Notas from './pages/Notas'
-import Boletos from './pages/Boletos'
+import Requerimentos from "./pages/Requerimentos";
+import RequerimentoForm from "./forms/RequerimentoForm";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<Dashboard />} />
-        <Route path="faltas" element={<Faltas />} />
-        <Route path="notas" element={<Notas />} />
-        <Route path="boletos" element={<Boletos />} />
-      </Route>
-    </Routes>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Requerimentos />} />
+
+        <Route path="/requerimentos" element={<Requerimentos />} />
+
+        <Route
+          path="/requerimentos/novo"
+          element={<RequerimentoForm />}
+        />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
