@@ -41,6 +41,15 @@ function Menu() {
         >
           Boletos
         </NavLink>
+
+        <NavLink
+          to="/requerimentos"
+          className={({ isActive }) =>
+            isActive ? 'link active' : 'link'
+          }
+        >
+          Requerimentos
+        </NavLink>
       </nav>
     </aside>
   )
