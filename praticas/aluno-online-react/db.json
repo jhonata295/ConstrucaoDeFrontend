@@ -1,0 +1,19 @@
+{
+  "requerimentos": [
+    {
+      "id": "1",
+      "nome": "João Silva",
+      "curso": "Sistemas para Internet",
+      "tipo": "Declaração",
+      "descricao": "Solicitação de declaração de matrícula"
+    },
+    {
+      "nome": "joao",
+      "curso": "ads",
+      "tipo": ".",
+      "descricao": ".",
+      "id": "KtMjfx7nLlA"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
