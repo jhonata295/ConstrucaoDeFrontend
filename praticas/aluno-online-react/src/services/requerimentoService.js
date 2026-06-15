@@ -1,27 +1,41 @@
-const BASE_URL = "http://localhost:3000/requerimentos";
+import api from "./api";
 
-export async function listarRequerimentos() {
-  const response = await fetch(BASE_URL);
+function getHeaders() {
+  const token = localStorage.getItem("token");
 
-  if (!response.ok) {
-    throw new Error("Erro ao buscar requerimentos");
+  if (!token) {
+    throw {
+      status: 401,
+      message: "Unauthorized",
+    };
   }
 
-  return response.json();
+  return {
+    Authorization: `Bearer ${token}`,
+  };
 }
 
-export async function cadastrarRequerimento(dados) {
-  const response = await fetch(BASE_URL, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify(dados)
-  });
+export async function listarRequerimentos() {
+  const response = await api.get(
+    "/requerimentos",
+    {
+      headers: getHeaders(),
+    }
+  );
 
-  if (!response.ok) {
-    throw new Error("Erro ao cadastrar requerimento");
-  }
+  return response.data;
+}
 
-  return response.json();
+export async function cadastrarRequerimento(
+  dados
+) {
+  const response = await api.post(
+    "/requerimentos",
+    dados,
+    {
+      headers: getHeaders(),
+    }
+  );
+
+  return response.data;
 }

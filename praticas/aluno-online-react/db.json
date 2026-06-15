@@ -1,19 +1,12 @@
 {
-  "requerimentos": [
+  "usuarios": [
     {
-      "id": "1",
-      "nome": "João Silva",
-      "curso": "Sistemas para Internet",
-      "tipo": "Declaração",
-      "descricao": "Solicitação de declaração de matrícula"
-    },
-    {
-      "nome": "joao",
-      "curso": "ads",
-      "tipo": ".",
-      "descricao": ".",
-      "id": "KtMjfx7nLlA"
+      "id": 1,
+      "nome": "Jhonata",
+      "email": "jhonata@email.com",
+      "senha": "123456"
     }
   ],
-  "$schema": "./node_modules/json-server/schema.json"
+
+  "requerimentos": []
 }
