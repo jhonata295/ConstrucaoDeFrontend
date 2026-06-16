@@ -1,10 +1,6 @@
-<<<<<<< HEAD
-import { NavLink } from 'react-router-dom'
-import './Menu.css'
-=======
 import { NavLink, useNavigate } from "react-router-dom";
 import authService from "../services/authService";
->>>>>>> f0b97f29d547c556982d581845ac9373cfdcf56e
+import "./Menu.css";
 
 function Menu() {
   const navigate = useNavigate();
@@ -23,11 +19,7 @@ function Menu() {
           to="/"
           end
           className={({ isActive }) =>
-<<<<<<< HEAD
-            isActive ? 'menu-link active' : 'menu-link'
-=======
-            isActive ? "link active" : "link"
->>>>>>> f0b97f29d547c556982d581845ac9373cfdcf56e
+            isActive ? "menu-link active" : "menu-link"
           }
         >
           Dashboard
@@ -36,11 +28,7 @@ function Menu() {
         <NavLink
           to="/faltas"
           className={({ isActive }) =>
-<<<<<<< HEAD
-            isActive ? 'menu-link active' : 'menu-link'
-=======
-            isActive ? "link active" : "link"
->>>>>>> f0b97f29d547c556982d581845ac9373cfdcf56e
+            isActive ? "menu-link active" : "menu-link"
           }
         >
           Faltas
@@ -49,11 +37,7 @@ function Menu() {
         <NavLink
           to="/notas"
           className={({ isActive }) =>
-<<<<<<< HEAD
-            isActive ? 'menu-link active' : 'menu-link'
-=======
-            isActive ? "link active" : "link"
->>>>>>> f0b97f29d547c556982d581845ac9373cfdcf56e
+            isActive ? "menu-link active" : "menu-link"
           }
         >
           Notas
@@ -62,11 +46,7 @@ function Menu() {
         <NavLink
           to="/boletos"
           className={({ isActive }) =>
-<<<<<<< HEAD
-            isActive ? 'menu-link active' : 'menu-link'
-=======
-            isActive ? "link active" : "link"
->>>>>>> f0b97f29d547c556982d581845ac9373cfdcf56e
+            isActive ? "menu-link active" : "menu-link"
           }
         >
           Boletos
@@ -75,7 +55,7 @@ function Menu() {
         <NavLink
           to="/requerimentos"
           className={({ isActive }) =>
-            isActive ? "link active" : "link"
+            isActive ? "menu-link active" : "menu-link"
           }
         >
           Requerimentos
