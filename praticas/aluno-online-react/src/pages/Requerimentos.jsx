@@ -1,3 +1,24 @@
+<<<<<<< HEAD
+import { Link } from "react-router-dom";
+
+function Requerimentos() {
+  return (
+    <div style={{ padding: "20px" }}>
+      <h1>Meus Requerimentos</h1>
+
+      <Link to="/requerimentos/novo">
+        <button
+          style={{
+            marginTop: "20px",
+            padding: "10px 20px",
+            fontSize: "18px",
+            cursor: "pointer",
+          }}
+        >
+          ➕ Novo Requerimento
+        </button>
+      </Link>
+=======
 import { useEffect, useState } from "react";
 import RequerimentoForm from "../components/RequerimentoForm";
 
@@ -59,6 +80,7 @@ function Requerimentos() {
           ))}
         </ul>
       )}
+>>>>>>> 4f26fe0761741df1447ddede7ad45f80345fd349
     </div>
   );
 }

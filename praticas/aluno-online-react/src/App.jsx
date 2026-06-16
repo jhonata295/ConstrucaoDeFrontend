@@ -1,3 +1,24 @@
+<<<<<<< HEAD
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Requerimentos from "./pages/Requerimentos";
+import RequerimentoForm from "./forms/RequerimentoForm";
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Requerimentos />} />
+
+        <Route path="/requerimentos" element={<Requerimentos />} />
+
+        <Route
+          path="/requerimentos/novo"
+          element={<RequerimentoForm />}
+        />
+      </Routes>
+    </BrowserRouter>
+=======
 import {
   Routes,
   Route,
@@ -47,6 +68,7 @@ function App() {
         />
       </Route>
     </Routes>
+>>>>>>> 4f26fe0761741df1447ddede7ad45f80345fd349
   );
 }
 

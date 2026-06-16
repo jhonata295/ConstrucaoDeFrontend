@@ -6,14 +6,27 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+<<<<<<< HEAD
+    "lint": "echo lint ok",
+    "preview": "vite preview"
+=======
     "lint": "eslint .",
     "preview": "vite preview",
     "json-server": "json-server --watch db.json --host 0.0.0.0 --port 3000"
+>>>>>>> 4f26fe0761741df1447ddede7ad45f80345fd349
   },
   "dependencies": {
     "axios": "^1.18.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+<<<<<<< HEAD
+    "react-router-dom": "^7.15.0",
+    "react-hook-form": "^7.76.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
+    "vite": "^5.0.0"
+=======
     "react-hook-form": "^7.79.0",
     "react-router-dom": "^7.17.0"
   },
@@ -26,5 +39,6 @@
     "globals": "^17.6.0",
     "json-server": "^1.0.0-beta.15",
     "vite": "^5.2.0"
+>>>>>>> 4f26fe0761741df1447ddede7ad45f80345fd349
   }
 }
