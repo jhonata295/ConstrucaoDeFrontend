@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Topbar from "../components/Topbar";
 import Aside from "../components/Aside";
 import Tabela from "../components/Tabela";
@@ -23,3 +24,15 @@ function Notas() {
 }
 
 export default Notas;
+=======
+function Notas() {
+  return (
+    <div>
+      <h1>Notas</h1>
+      <p>Visualize suas notas.</p>
+    </div>
+  )
+}
+
+export default Notas
+>>>>>>> cf5c677bd831cf9b9640c15fbbc79956326dcad8
