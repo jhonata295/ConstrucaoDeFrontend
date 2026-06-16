@@ -1,5 +1,6 @@
 import { NavLink, useNavigate } from "react-router-dom";
 import authService from "../services/authService";
+import "./Menu.css";
 
 function Menu() {
   const navigate = useNavigate();
@@ -16,8 +17,9 @@ function Menu() {
       <nav>
         <NavLink
           to="/"
+          end
           className={({ isActive }) =>
-            isActive ? "link active" : "link"
+            isActive ? "menu-link active" : "menu-link"
           }
         >
           Dashboard
@@ -26,7 +28,7 @@ function Menu() {
         <NavLink
           to="/faltas"
           className={({ isActive }) =>
-            isActive ? "link active" : "link"
+            isActive ? "menu-link active" : "menu-link"
           }
         >
           Faltas
@@ -35,7 +37,7 @@ function Menu() {
         <NavLink
           to="/notas"
           className={({ isActive }) =>
-            isActive ? "link active" : "link"
+            isActive ? "menu-link active" : "menu-link"
           }
         >
           Notas
@@ -44,7 +46,7 @@ function Menu() {
         <NavLink
           to="/boletos"
           className={({ isActive }) =>
-            isActive ? "link active" : "link"
+            isActive ? "menu-link active" : "menu-link"
           }
         >
           Boletos
@@ -53,7 +55,7 @@ function Menu() {
         <NavLink
           to="/requerimentos"
           className={({ isActive }) =>
-            isActive ? "link active" : "link"
+            isActive ? "menu-link active" : "menu-link"
           }
         >
           Requerimentos
