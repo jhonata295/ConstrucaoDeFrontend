@@ -1,4 +1,13 @@
 <<<<<<< HEAD
+import { Routes, Route, Navigate } from "react-router";
+
+import Login from "./pages/Login";
+import Dashboard from "./pages/Dashboard";
+import Faltas from "./pages/Faltas";
+
+import { useAuth } from "./contexts/AuthContext";
+=======
+<<<<<<< HEAD
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Requerimentos from "./pages/Requerimentos";
@@ -41,10 +50,28 @@ function PrivateRoute({ children }) {
     ? children
     : <Navigate to="/login" />;
 }
+>>>>>>> df0ce86869a026e163f5406b83b04f76cdbd5184
 
 function App() {
+  const { autenticado } = useAuth();
+
+  if (!autenticado) {
+    return (
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="*" element={<Navigate to="/login" />} />
+      </Routes>
+    );
+  }
+
   return (
     <Routes>
+<<<<<<< HEAD
+      <Route path="/" element={<Dashboard />} />
+      <Route path="/faltas" element={<Faltas />} />
+      <Route path="*" element={<Navigate to="/" />} />
+    </Routes>
+=======
       <Route
         path="/login"
         element={<Login />}
@@ -69,6 +96,7 @@ function App() {
       </Route>
     </Routes>
 >>>>>>> 4f26fe0761741df1447ddede7ad45f80345fd349
+>>>>>>> df0ce86869a026e163f5406b83b04f76cdbd5184
   );
 }
 

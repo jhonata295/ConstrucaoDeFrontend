@@ -4,8 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host 0.0.0.0",
     "build": "vite build",
+<<<<<<< HEAD
+    "lint": "eslint .",
+    "preview": "vite preview --host 0.0.0.0"
+=======
 <<<<<<< HEAD
     "lint": "echo lint ok",
     "preview": "vite preview"
@@ -14,6 +18,7 @@
     "preview": "vite preview",
     "json-server": "json-server --watch db.json --host 0.0.0.0 --port 3000"
 >>>>>>> 4f26fe0761741df1447ddede7ad45f80345fd349
+>>>>>>> df0ce86869a026e163f5406b83b04f76cdbd5184
   },
   "dependencies": {
     "axios": "^1.18.0",
@@ -33,11 +38,15 @@
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@vitejs/plugin-react": "^4.2.1",
+<<<<<<< HEAD
+    "eslint": "^9.0.0",
+=======
     "eslint": "^10.4.0",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.6.0",
     "json-server": "^1.0.0-beta.15",
+>>>>>>> df0ce86869a026e163f5406b83b04f76cdbd5184
     "vite": "^5.2.0"
 >>>>>>> 4f26fe0761741df1447ddede7ad45f80345fd349
   }
