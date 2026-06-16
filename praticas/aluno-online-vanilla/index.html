@@ -1,12 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/javascript.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aluno Online</title>
-  </head>
-  <body>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login - Aluno Online</title>
+<link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body>
+
+<main class="login-container">
+
+<form id="loginForm">
+
+<header class="login-header">
+<img src="javascript.svg" alt="Logo" class="logo">
+<h1>Aluno Online</h1>
+</header>
+
+<section class="form-group">
+<label for="email">E-mail</label>
+<input type="email" id="email" name="email">
+<p id="emailError" class="error-message"></p>
+</section>
+
+<section class="form-group">
+<label for="senha">Senha</label>
+<input type="password" id="senha" name="senha">
+<p id="senhaError" class="error-message"></p>
+</section>
+
+<button type="submit">Entrar</button>
+
+</form>
+
+<footer class="footer">
+<p>© 2026. Todos os direitos reservados.</p>
+</footer>
+
+</main>
+
+<script src="/src/main.js"></script>
+
+</body>
 </html>
