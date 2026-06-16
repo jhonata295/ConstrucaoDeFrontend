@@ -1,4 +1,10 @@
 <<<<<<< HEAD
+import "./App.css";
+
+function App() {
+  return <></>;
+=======
+<<<<<<< HEAD
 import { Routes, Route, Navigate } from "react-router";
 
 import Login from "./pages/Login";
@@ -98,6 +104,7 @@ function App() {
 >>>>>>> 4f26fe0761741df1447ddede7ad45f80345fd349
 >>>>>>> df0ce86869a026e163f5406b83b04f76cdbd5184
   );
+>>>>>>> 7375836480e8c022a8eaf1015b86a00c907ac246
 }
 
 export default App;
