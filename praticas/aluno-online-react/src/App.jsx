@@ -1,4 +1,10 @@
 <<<<<<< HEAD
+import Dashboard from "./pages/Dashboard";
+
+function App() {
+  return <Dashboard />;
+=======
+<<<<<<< HEAD
 import "./App.css";
 
 function App() {
@@ -105,6 +111,7 @@ function App() {
 >>>>>>> df0ce86869a026e163f5406b83b04f76cdbd5184
   );
 >>>>>>> 7375836480e8c022a8eaf1015b86a00c907ac246
+>>>>>>> cf5c677bd831cf9b9640c15fbbc79956326dcad8
 }
 
 export default App;

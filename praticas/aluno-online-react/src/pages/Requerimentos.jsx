@@ -1,4 +1,21 @@
 <<<<<<< HEAD
+import Topbar from "../components/Topbar";
+import Aside from "../components/Aside";
+import Card from "../components/Card";
+
+function Requerimentos() {
+  return (
+    <div style={{ display: "flex" }}>
+      <Aside itens={["Dashboard", "Requerimentos"]} />
+
+      <div style={{ flex: 1 }}>
+        <Topbar titulo="Requerimentos" usuario="Jhonata" />
+
+        <Card titulo="Declaração" status="Aprovado" cor="purple" />
+        <Card titulo="2ª via boleto" status="Em análise" cor="purple" />
+      </div>
+=======
+<<<<<<< HEAD
 import { Link } from "react-router-dom";
 
 function Requerimentos() {
@@ -81,6 +98,7 @@ function Requerimentos() {
         </ul>
       )}
 >>>>>>> 4f26fe0761741df1447ddede7ad45f80345fd349
+>>>>>>> cf5c677bd831cf9b9640c15fbbc79956326dcad8
     </div>
   );
 }
