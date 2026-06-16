@@ -4,6 +4,7 @@ import Menu from "../components/Menu";
 function Faltas() {
   return (
     <div>
+<<<<<<< HEAD
       <Topbar />
       <Menu />
 
@@ -39,3 +40,12 @@ function Faltas() {
 }
 
 export default Faltas;
+=======
+      <h1>Faltas</h1>
+      <p>Visualize suas faltas.</p>
+    </div>
+  )
+}
+
+export default Faltas
+>>>>>>> df0ce86869a026e163f5406b83b04f76cdbd5184

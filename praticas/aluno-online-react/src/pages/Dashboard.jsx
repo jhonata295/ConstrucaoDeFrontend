@@ -4,6 +4,7 @@ import Menu from "../components/Menu";
 function Dashboard() {
   return (
     <div>
+<<<<<<< HEAD
       <Topbar />
       <Menu />
 
@@ -25,3 +26,12 @@ function Dashboard() {
 }
 
 export default Dashboard;
+=======
+      <h1>Dashboard</h1>
+      <p>Bem-vindo ao sistema Aluno Online.</p>
+    </div>
+  )
+}
+
+export default Dashboard
+>>>>>>> df0ce86869a026e163f5406b83b04f76cdbd5184
