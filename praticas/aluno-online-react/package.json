@@ -1,5 +1,5 @@
 {
-  "name": "aluno-online-react",
+  "name": "aluno-online-react01~",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -22,6 +22,9 @@
   },
   "dependencies": {
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6a6e7de6af8d57ba0a9ff4a9db2d8a5d6257ea78
     "react": "^19.2.4",
     "react-dom": "^19.2.4"
   },
@@ -35,6 +38,8 @@
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.4.0",
     "vite": "^8.0.4"
+<<<<<<< HEAD
+=======
 =======
     "axios": "^1.18.0",
     "react": "^18.2.0",
@@ -65,5 +70,6 @@
     "vite": "^5.2.0"
 >>>>>>> 4f26fe0761741df1447ddede7ad45f80345fd349
 >>>>>>> cf5c677bd831cf9b9640c15fbbc79956326dcad8
+>>>>>>> 6a6e7de6af8d57ba0a9ff4a9db2d8a5d6257ea78
   }
 }

@@ -1,4 +1,10 @@
 <<<<<<< HEAD
+import Dashboard from "./pages/Dashboard/Dashboard";
+
+function App() {
+  return <Dashboard />;
+=======
+<<<<<<< HEAD
 import Dashboard from "./pages/Dashboard";
 
 function App() {
@@ -112,6 +118,7 @@ function App() {
   );
 >>>>>>> 7375836480e8c022a8eaf1015b86a00c907ac246
 >>>>>>> cf5c677bd831cf9b9640c15fbbc79956326dcad8
+>>>>>>> 6a6e7de6af8d57ba0a9ff4a9db2d8a5d6257ea78
 }
 
 export default App;
